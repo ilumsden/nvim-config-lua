@@ -1,5 +1,14 @@
 -- Configuration for nvim-tree
-require('nvim-tree').setup{}
+require('nvim-tree').setup{
+    view = {
+        mappings = {
+            list = {
+                { key = '-', action = '' },
+                { key = '~', action = 'dir_up' },
+            }
+        }
+    }
+}
 
 -- Configures/launches Lualine
 -- Themes can be found at:
