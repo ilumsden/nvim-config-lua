@@ -8,10 +8,10 @@ map('', '<M-Left>', ':tabp<CR>', {})
 map('i', '<M-Left>', '<ESC>:tabp<CR>', {})
 
 -- Mappings for nvim-tree
-map('n', 'to', [[:NvimTreeToggle]], {})
-map('n', 'tf', [[:NvimTreeFocus]], {})
-map('n', 'ftf', [[:NvimTreeFindFile]], {})
-map('n', 'tc', [[:NvimTreeCollapse]], {})
+map('n', '<Leader>otree', [[:NvimTreeToggle]], {})
+map('n', '<Leader>ftree', [[:NvimTreeFocus]], {})
+map('n', '<Leader>findtree', [[:NvimTreeFindFile]], {})
+map('n', '<Leader>ctree', [[:NvimTreeCollapse]], {})
 
 -- Mappings for vim-choosewin
 map('n', '-', '<Plug>(choosewin)', {})
