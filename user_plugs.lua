@@ -1,8 +1,15 @@
 -- Configuration for nvim-tree
 require('nvim-tree').setup{}
 
--- Configures/launches the One Monokai theme for Feline
-require('feline_one_monokai')
+-- Configures/launches Lualine
+-- Themes can be found at:
+-- https://github.com/nvim-lualine/lualine.nvim/blob/master/THEMES.md
+require('lualine').setup{
+    options = {
+        theme = 'horizon',
+        globalstatus = true
+    }
+}
 
 -- Configuration for goto-preview
 require('goto-preview').setup{}

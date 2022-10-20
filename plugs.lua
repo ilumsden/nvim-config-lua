@@ -49,8 +49,11 @@ return packer.startup(function(use)
     }
    -- Window selector
     use 't9md/vim-choosewin'
-    -- Plugin for bottom bar
-    use 'feline-nvim/feline.nvim'
+    -- Plugin for statusline
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
     -- Plugin to configure built-in LSP
     use 'neovim/nvim-lspconfig'
     -- Plugin for quick goto's for functions, types, etc.
