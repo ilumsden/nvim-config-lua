@@ -56,6 +56,11 @@ return packer.startup(function(use)
     }
     -- Plugin to configure built-in LSP
     use 'neovim/nvim-lspconfig'
+    -- Plugin for Treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = function() require('nvim-treesitter.install').update({ with_sync = true }) end
+    }
     -- Plugin for quick goto's for functions, types, etc.
     use 'rmagatti/goto-preview'
     -- Plugins needed for Rust utilities
