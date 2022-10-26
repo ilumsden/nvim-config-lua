@@ -78,6 +78,8 @@ return packer.startup(function(use)
     use 'hrsh7th/vim-vsnip'
     -- Nightfox Color Scheme
     use 'EdenEast/nightfox.nvim'
+    -- Bracket/Parentheses auto pairing
+    use 'windwp/nvim-autopairs'
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then

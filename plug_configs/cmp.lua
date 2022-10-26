@@ -22,7 +22,7 @@ cmp.setup{
         ['<S-Tab>'] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_prev_item()
-            else
+           else
                 fallback()
             end
         end, {'i', 's'}),
@@ -55,3 +55,10 @@ cmp.setup.cmdline(':', {
         { name = 'cmdline' }
     })
 })
+
+-- Add interaction between nvim-cmp and nvim-autopairs
+local cmp_autopairs = require('nvim-autopairs.completion.cmp')
+cmp.event:on(
+    'confirm_done',
+    cmp_autopairs.on_confirm_done()
+)
