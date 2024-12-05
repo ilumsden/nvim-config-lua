@@ -15,7 +15,6 @@ ts_configs.setup{
         'javascript',
         'json',
         'json5',
-        'latex',
         'llvm',
         'make',
         'meson',
