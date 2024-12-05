@@ -124,3 +124,6 @@ lspconfig['yamlls'].setup{
     flags = lsp_flags,
     capabilities = capabilities
 }
+
+require("mason").setup()
+require("mason-lspconfig").setup()

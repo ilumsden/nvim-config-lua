@@ -81,6 +81,13 @@ return packer.startup(function(use)
     use 'EdenEast/nightfox.nvim'
     -- Bracket/Parentheses auto pairing
     use 'windwp/nvim-autopairs'
+    -- LSP dependency installer
+    use {
+        "williamboman/mason.nvim",
+        run = ":MasonUpdate"
+    }
+    -- Plugin to bridge mason.nvim and nvim-lspconfig together
+    use "williamboman/mason-lspconfig.nvim"
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if PACKER_BOOTSTRAP then
